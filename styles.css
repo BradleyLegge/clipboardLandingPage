@@ -25,7 +25,7 @@ body{
 }
 
 .intro{
-    padding: 100px;
+    padding: 100px 0;
     margin: auto;
     width: 750px;
     text-align: center;
@@ -58,7 +58,7 @@ button{
     width: 30%;
     border: none;
     outline: none;
-    padding: 10px;
+    padding: 20px;
     border-radius: 1000px;
     color: white;
 }
@@ -90,7 +90,7 @@ button:hover{
 }
 
 .snippet{
-    padding: 100px;
+    padding: 100px 0;
     margin: auto;
     width: 750px;
     text-align: center;
@@ -117,4 +117,108 @@ button:hover{
 .can-dos{
     display: flex;
     flex-direction: column;
+}
+
+.access{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.devices-img{
+    width: 50%;
+}
+
+.supercharge{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Need to work on examples to get images to correct heights and widths
+   as well as centering text to line up with each other. */
+
+.example-container{
+    width: 70%;
+    display: flex;
+}
+
+.examples{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.examples img{
+    width: 10%;
+    height: auto;
+}
+
+.examples h3 {
+    font-size: 24px;
+    margin-top: 40px;
+}
+
+.sponsors{
+    padding: 200px 0;
+    margin: auto;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sponsors img{
+    height: 10%;
+}
+
+.downloads{
+    margin: auto;
+    width: 750px;
+    text-align: center;
+}
+
+footer{
+    margin-top: 100px;
+    background-color: lightgray;
+    padding: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.clipboard-logo-footer{
+    width: 5%;
+}
+
+.links{
+    font-size: 20px;
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 50px;
+    row-gap: 20px;
+}
+
+.link a{ 
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--grayish-blue);
+}
+
+.link a:hover{
+    color: var(--strong-cyan);
+}
+
+.social-media-icons{
+    display: flex;
+    gap: 20px;
+}
+
+/* .social-media-icons img:hover{
+    position: relative;
+    color: var(--strong-cyan);
+} */
+
+.facebook-icon{
+    fill: var(--strong-cyan);
 }
