@@ -7,10 +7,114 @@
 
 :root{
     --strong-cyan: hsl(171, 66%, 44%);
+    --strong-cyan-bottom: hsl(171, 66%, 34%);
+    --strong-cyan-hover: hsl(171, 66%, 54%);
     --light-blue: hsl(233, 100%, 69%);
+    --light-blue-bottom: hsl(233, 100%, 59%);
+    --light-blue-hover: hsl(233, 100%, 75%);
     --dark-grayish-blue: hsl(210, 10%, 33%);
     --grayish-blue: hsl(201, 11%, 66%);
 
     --font-family: 'Bai Jamjuree', sans-serif;
     --font-weight: 400, 600;
+}
+
+body{
+    background: url(images/bg-header-desktop.png) no-repeat;
+    background-size: 100%;
+}
+
+.intro{
+    padding: 100px;
+    margin: auto;
+    width: 750px;
+    text-align: center;
+}
+
+.clipboard-logo{
+    max-width: 20%;
+    margin-bottom: 30px;
+}
+
+h1{
+    font-size: 32px;
+    margin: 20px 0;
+    color: var(--dark-grayish-blue);
+}
+
+h2{
+    font-size: 28px;
+    color: var(--dark-grayish-blue);
+}
+
+p{
+    font-size: 18px;
+    margin: 20px 0;
+    color: var(--grayish-blue);
+}
+
+button{
+    margin: 20px 8px;
+    width: 30%;
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 1000px;
+    color: white;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+.iOS-btn{
+    border-bottom: 2px solid var(--strong-cyan-bottom);
+    background-color: var(--strong-cyan); 
+    box-shadow: 0px 15px 35px var(--strong-cyan-hover);
+}
+
+.iOS-btn:hover{
+    border-bottom: 2px solid var(--strong-cyan);
+    background-color: var(--strong-cyan-hover); 
+}
+
+.mac-btn{
+    border-bottom: 2px solid var(--light-blue-bottom);
+    background-color: var(--light-blue);
+    box-shadow: 0px 15px 45px var(--light-blue-hover);
+}
+
+.mac-btn:hover{
+    border-bottom: 2px solid var(--light-blue);
+    background-color: var(--light-blue-hover);
+}
+
+.snippet{
+    padding: 100px;
+    margin: auto;
+    width: 750px;
+    text-align: center;
+}
+
+.info-container{
+    display: flex;
+    gap: 100px;
+}
+
+.computer-img{
+    width: 50%;
+    margin-left: -30px;
+}
+
+.can-dos-container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    width: 30%;
+}
+
+.can-dos{
+    display: flex;
+    flex-direction: column;
 }
